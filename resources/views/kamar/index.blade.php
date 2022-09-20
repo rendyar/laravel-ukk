@@ -1,6 +1,7 @@
 @extends('template.dashboard')
 
 @section('content')
+
     <div class="container">
         <a href="{{ route('kamar.create') }}" type="button" class="btn btn-outline-primary my-4">Tambah data</a>
         @if (session()->has('success'))
@@ -33,4 +34,5 @@
             </tbody>
         </table>
     </div>
+    
 @endsection
