@@ -16,16 +16,22 @@ class AkunSeeder extends Seeder
     {
         $user = [
         [
-            'nama_lengkap' => 'ini akun admin',
+            'nama_lengkap' => 'ini akun level admin',
+            'level' => 'admin',
+            'email' => 'arif@gmail.com',
+            'password' => bcrypt('arif123')
+        ],
+        [
+            'nama_lengkap' => 'ini akun level admin',
             'level' => 'admin',
             'email' => 'admin@gmail.com',
             'password' => bcrypt('admin123')
         ],
         [
-            'nama_lengkap' => 'ini akun user',
-            'level' => 'user',
-            'email' => 'user@gmail.com',
-            'password' => bcrypt('user123')
+            'nama_lengkap' => 'ini akun level admin',
+            'level' => 'admin',
+            'email' => 'reza@gmail.com',
+            'password' => bcrypt('reza123')
         ],
         ];
         foreach ( $user as $key => $value ){
