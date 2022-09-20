@@ -8,15 +8,15 @@
 
     <title>ShoSo Marketplace - Dashboard</title>
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="{{ asset('./home/css/styles.css') }}" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      href="{{ asset('https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css') }}"
       rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
     <script
-      src="https://kit.fontawesome.com/32f82e1dca.js"
+      src="{{ asset('https://kit.fontawesome.com/32f82e1dca.js') }}"
       crossorigin="anonymous"
     ></script>
   </head>
@@ -34,7 +34,7 @@
       </div>
       <div class="logo-brand mt-lg-5">
         <img
-          src="./assets/images/logo.png"
+          src="{{ asset('./home/assets/images/logo.png') }}"
           alt="Logo Shoso"
           width="52"
           height="50"
@@ -158,7 +158,7 @@
       </nav>
       <footer>
         <div class="d-flex gap-3 align-items-center mb-4">
-          <img src="./assets/icons/ic_mode.svg" alt="Mode Display" />
+          <img src="{{ asset('./home/assets/icons/ic_mode.svg') }}" alt="Mode Display" />
           <p id="label-mode" class="flex-fill label-mode">Light Mode</p>
           <div>
             <input
@@ -169,14 +169,14 @@
             />
             <label for="checkbox" class="label-toggle">
               <img
-                src="./assets/icons/ic_moon.svg"
+                src="{{ asset('./home/assets/icons/ic_moon.svg') }}"
                 width="50%"
                 class="ic-theme"
                 id="ic-dark"
                 alt="Icon Dark"
               />
               <img
-                src="./assets/icons/ic_sun.svg"
+                src="{{ asset('./home/assets/icons/ic_sun.svg') }}"
                 width="50%"
                 class="ic-theme"
                 id="ic-light"
@@ -202,7 +202,7 @@
         <nav class="nav-content gap-5">
           <div class="d-flex gap-3 align-items-center">
             <img
-              src="./assets/images/photo.webp"
+              src="{{ asset('./home/assets/images/photo.webp') }}"
               alt="Photo Profile"
               class="photo-profile"
             />
@@ -258,7 +258,7 @@
         <div class="d-flex gap-4 flex-wrap">
           <div class="product-card">
             <img
-              src="./assets/images/nike_red.png"
+              src="{{ asset('./home/assets/images/nike_red.png') }}"
               alt="Nike Red"
               width="260"
               height="180"
@@ -297,7 +297,7 @@
           </div>
           <div class="product-card">
             <img
-              src="./assets/images/nike_airforce.png"
+              src="{{ asset('./home/assets/images/nike_airforce.png') }}"
               alt="Nike Airforce"
               width="260"
               height="180"
@@ -336,7 +336,7 @@
           </div>
           <div class="product-card">
             <img
-              src="./assets/images/nike_kiger.png"
+              src="{{ asset('./home/assets/images/nike_kiger.png') }}"
               alt="Nike Kiger"
               width="260"
               height="180"
@@ -381,7 +381,7 @@
         <div class="d-flex gap-4 flex-wrap">
           <div class="store-card">
             <img
-              src="./assets/images/adidas.png"
+              src="{{ asset('./home/assets/images/adidas.png') }}"
               alt="Adidas Store"
               width="410"
               height="100"
@@ -389,7 +389,7 @@
             <div class="store-logo-wrapper">
               <div class="store-logo-circle">
                 <img
-                  src="./assets/images/adidas_logo.png"
+                  src="{{ asset('./home/assets/images/adidas_logo.png') }}"
                   alt="Adidas Logo"
                   class="store-logo"
                 />
@@ -400,7 +400,7 @@
                 <p class="title-store">
                   Adidas Store
                   <span
-                    ><img src="./assets/icons/ic_badge.svg" alt="Icon Badge"
+                    ><img src="{{ asset('./home/assets/icons/ic_badge.svg') }}" alt="Icon Badge"
                   /></span>
                 </p>
                 <p class="username-store">@adidasindonesia</p>
@@ -434,7 +434,7 @@
           </div>
           <div class="store-card">
             <img
-              src="./assets/images/puma.png"
+              src="{{ asset('./home/assets/images/puma.png') }}"
               alt="Puma Store"
               width="410"
               height="100"
@@ -442,7 +442,7 @@
             <div class="store-logo-wrapper">
               <div class="store-logo-circle">
                 <img
-                  src="./assets/images/puma_logo.png"
+                  src="{{ asset('./home/assets/images/puma_logo.png') }}"
                   alt="Puma Logo"
                   class="store-logo"
                 />
@@ -453,7 +453,7 @@
                 <p class="title-store">
                   Puma Store
                   <span
-                    ><img src="./assets/icons/ic_badge.svg" alt="Icon Badge"
+                    ><img src="{{ asset('./home/assets/icons/ic_badge.svg') }}" alt="Icon Badge"
                   /></span>
                 </p>
                 <p class="username-store">@pumaid</p>
@@ -489,9 +489,9 @@
       </section>
     </main>
 
-    <script src="./js/index.js"></script>
+    <script src="{{ asset('./home/js/index.js') }}"></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      src="{{ asset('https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js') }}"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
