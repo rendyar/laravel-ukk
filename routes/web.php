@@ -2,8 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\KamarController;
+use App\Http\Controllers\FasilitasController;
+use App\Http\Controllers\PemesananController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +22,8 @@ use App\Http\Controllers\AdminController;
 
 
 
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
 
 Route::get('/login', [AuthController::class, 'index'])->name('login');
 Route::post('/proses', [AuthController::class, 'proses'])->name('proses');
@@ -26,6 +32,10 @@ Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::group(['middleware' => ['auth','Akses:admin']], function(){
     Route::get('/admin', [AdminController::class, 'index'])->name('admin');
+    Route::resource('kamar',KamarController::class);
+    Route::resource('fasilitas-hotel',FasilitasController::class);
+    Route::get('/pemesanan', [PemesananController::class, 'index']); 
+
 });
 
 Route::group(['middleware' => ['auth','Akses:user']], function(){
