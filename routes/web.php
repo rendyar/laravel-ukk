@@ -24,8 +24,6 @@ use App\Http\Controllers\PemesananController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/dashboard', [HomeController::class, 'dashboard'])->name('dashboard');
-
 Route::get('/login', [AuthController::class, 'index'])->name('login');
 Route::post('/proses', [AuthController::class, 'proses'])->name('proses');
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout');

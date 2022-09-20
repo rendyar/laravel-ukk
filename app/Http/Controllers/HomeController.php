@@ -11,8 +11,4 @@ class HomeController extends Controller
         return view('template.index');
     }
 
-    public function dashboard()
-    {
-        return view('template.dashboard');
-    }
 }
