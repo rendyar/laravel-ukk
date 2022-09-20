@@ -49,7 +49,7 @@
                 </a>
 
 
-                <a href="#" class="sidebar-item" onclick="toggleActive(this)">
+                <a href="{{ url('kamar')}}" class="sidebar-item" onclick="toggleActive(this)">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20 7H4C2.89543 7 2 7.89543 2 9V19C2 20.1046 2.89543 21 4 21H20C21.1046 21 22 20.1046 22 19V9C22 7.89543 21.1046 7 20 7Z" stroke="#ABB3C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M16 21V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V21" stroke="#ABB3C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -58,7 +58,7 @@
                     <span>Kamar</span>
                 </a>
 
-                <a href="#" class="sidebar-item" onclick="toggleActive(this)">
+                <a href="{{ url('fasilitas-hotel')}}" class="sidebar-item" onclick="toggleActive(this)">
                     <!-- <img src="./assets/img/global/dollar-sign.svg" alt=""> -->
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 1V23" stroke="#ABB3C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -80,7 +80,7 @@
                     <span>My Profile</span>
                 </a>
 
-                <a href="#" class="sidebar-item" onclick="toggleActive(this)">
+                <a href="{{ route('logout')}}" class="sidebar-item" onclick="toggleActive(this)">
 
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M16 17L21 12L16 7" stroke="#ABB3C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -121,11 +121,6 @@
             <div class="content">
 
                 <div class="row">
-
-                    {{-- <div class="col-12">
-                        <h2 class="content-title">Statistics</h2>
-                        <h5 class="content-desc mb-4">Your business growth</h5>
-                    </div> --}}
 
                     {{-- template --}}
                     @yield('content')
